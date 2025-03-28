@@ -104,12 +104,12 @@ public class Inventario {
     }
 
     /**
-     * Obtiene el siguiente SKU disponible para añadir productos nuevos
+     * Obtiene el último SKU utilizado en el CSV para añadir productos nuevos
      * @param archivo La ruta del CSV que almacena los productos
-     * @return El siguiente SKU disponible
+     * @return El último SKU utilizado
      */
-    public static String obtenerSiguienteSku(String archivo){
-        String siguienteSku = "1";
+    public static String obtenerUltimoSku(String archivo){
+        String ultimoSku = "0";
         try (BufferedReader br = new BufferedReader(new FileReader(archivo))) {
             String linea;
             boolean esPrimeraLinea = true;
@@ -121,14 +121,14 @@ public class Inventario {
                 String[] partes = linea.split(",");
                 if (partes.length > 0) {
                     String skuActual = partes[0];
-                    if (Integer.parseInt(skuActual) >= Integer.parseInt(siguienteSku)){
-                        siguienteSku = String.valueOf(Integer.parseInt(siguienteSku) + 1);
+                    if (Integer.parseInt(skuActual) > Integer.parseInt(ultimoSku)){
+                        ultimoSku = skuActual; /* Actualiza el SKU al último elemento encontrado */
                     }
                 }
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return siguienteSku;
+        return ultimoSku;
     }
 }
