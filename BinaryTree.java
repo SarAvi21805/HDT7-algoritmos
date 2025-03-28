@@ -4,7 +4,7 @@ import java.util.Map;
 
 /**
  * @author Alejandra Avilés
- * Clase que representa un árbol binario para el almacenamiento de nodos con pruductos.
+ * Clase que representa un árbol binario para el almacenamiento de nodos con productos.
  * Permite insertar, buscar y listar productos
  */
 public class BinaryTree {
