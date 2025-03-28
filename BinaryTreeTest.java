@@ -43,32 +43,44 @@ public class BinaryTreeTest {
     }
 
     @Test
-public void testAgregarProductoExistentePorSku() {
-    // Insertar el producto inicialmente
-    arbolSku.insertar(producto.getSku(), producto);
-    
-    /* Intento de agregar un producto nuevamente (duplicado) */
-    arbolSku.agregarProducto(arbolSku, arbolNombre, "SKU123", "Camiseta", "Camiseta de algodón", producto.getTallas(), "inventario.csv");
-    
-    /* Verificando la cantidad de tallas */
-    assertEquals(10, arbolSku.buscar(producto.getSku()).getTallas().get("S")); // Asumiendo que la cantidad inicial era 10
-}
+    public void testAgregarProductoExistentePorSku() {
+        // Insertar el producto inicialmente
+        arbolSku.insertar(producto.getSku(), producto);
+        
+        /* Intento de agregar un producto nuevamente (duplicado) */
+        arbolSku.agregarProducto(arbolSku, arbolNombre, "SKU123", "Camiseta", "Camiseta de algodón", producto.getTallas(), "inventario.csv");
+        
+        /* Verificando la cantidad de tallas */
+        assertEquals(10, arbolSku.buscar(producto.getSku()).getTallas().get("S")); // Asumiendo que la cantidad inicial era 10
+    }
 
-@Test
-public void testAgregarProductoExistentePorNombre() {
-    // Insertar el producto inicialmente
-    arbolNombre.insertar(producto.getNombre(), producto);
-    
-    /* Intento de agregar un producto nuevamente (duplicado) */
-    arbolSku.agregarProducto(arbolSku, arbolNombre, "SKU124", "Camiseta", "Camiseta de algodón", producto.getTallas(), "inventario.csv");
-    
-    /* Verificando la cantidad de prendas */
-    assertEquals(10, arbolNombre.buscar(producto.getNombre()).getTallas().get("S")); // Asumiendo que la cantidad inicial era 10
-}
+    @Test
+    public void testAgregarProductoExistentePorNombre() {
+        // Insertar el producto inicialmente
+        arbolNombre.insertar(producto.getNombre(), producto);
+        
+        /* Intento de agregar un producto nuevamente (duplicado) */
+        arbolSku.agregarProducto(arbolSku, arbolNombre, "SKU124", "Camiseta", "Camiseta de algodón", producto.getTallas(), "inventario.csv");
+        
+        /* Verificando la cantidad de prendas */
+        assertEquals(10, arbolNombre.buscar(producto.getNombre()).getTallas().get("S")); // Asumiendo que la cantidad inicial era 10
+    }
 
     @Test
     public void testListar() {
         arbolSku.insertar(producto.getSku(), producto);
-        assertDoesNotThrow(() -> arbolSku.listar());
+        assertDoesNotThrow(() -> arbolSku.listar(true));
+    }
+
+    @Test
+    public void testBuscarProductoNoExistentePorSku() {
+        Producto encontrado = arbolSku.buscar("SKU999");
+        assertNull(encontrado, "Se encontró un producto que no debería existir.");
+    }
+
+    @Test
+    public void testBuscarProductoNoExistentePorNombre() {
+        Producto encontrado = arbolNombre.buscarPorNombre("Producto Inexistente");
+        assertNull(encontrado, "Se encontró un producto que no debería existir.");
     }
 }
