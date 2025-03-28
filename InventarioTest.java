@@ -92,9 +92,61 @@ public void testEditarProducto() {
     assertEquals(5, productoEditado.getTallas().get("L"), "La cantidad de tallas 'L' no se actualizó correctamente.");
 }
 
-    @Test
-    public void testObtenerSiguienteSku() {
-        String siguienteSku = Inventario.obtenerSiguienteSku(archivo);
-        assertEquals("3", siguienteSku); // El siguiente SKU debería ser 3
+@Test
+public void testObtenerUltimoSku() {
+    String ultimoSku = Inventario.obtenerUltimoSku(archivo);
+    assertEquals("2", ultimoSku); // El último SKU debería ser 2
+}
+
+@Test
+public void testCargarInventarioConArchivoVacio() {
+    // Crear un archivo vacío para la prueba
+    String archivoVacio = "inventario_vacio.csv";
+    try (BufferedWriter bw = new BufferedWriter(new FileWriter(archivoVacio))) {
+        // No se escribe nada, el archivo queda vacío
+    } catch (IOException e) {
+        e.printStackTrace();
     }
+
+    // Intentar cargar el inventario desde el archivo vacío
+    Inventario.cargarInventario(archivoVacio, arbolSku, arbolNombre);
+    
+    // Verificar que no se haya cargado ningún producto
+    assertNull(arbolSku.buscar("1"), "Se cargó un producto desde un archivo vacío.");
+    assertNull(arbolNombre.buscar("Camiseta"), "Se cargó un producto desde un archivo vacío.");
+}
+
+@Test
+public void testCargarInventarioConFormatoIncorrecto() {
+    // Crear un archivo con formato incorrecto
+    String archivoIncorrecto = "inventario_incorrecto.csv";
+    try (BufferedWriter bw = new BufferedWriter(new FileWriter(archivoIncorrecto))) {
+        bw.write("SKU,Nombre,Descripción,Tallas\n");
+        bw.write("1,Camiseta\n"); // Falta la parte de tallas
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+
+    // Intentar cargar el inventario desde el archivo con formato incorrecto
+    Inventario.cargarInventario(archivoIncorrecto, arbolSku, arbolNombre);
+    
+    // Verificar que no se haya cargado ningún producto
+    assertNull(arbolSku.buscar("1"), "Se cargó un producto desde un archivo con formato incorrecto.");
+}
+
+@Test
+public void testEditarProductoNoExistente() {
+    Inventario.cargarInventario(archivo, arbolSku, arbolNombre);
+    
+    Map<String, Integer> nuevasTallas = new HashMap<>();
+    nuevasTallas.put("S", 12);
+    
+    Inventario inventario = new Inventario();
+    // Intentar editar un producto que no existe
+    inventario.editarProducto(arbolSku, "999", "Producto no existente", "añadir", nuevasTallas, archivo);
+    
+    // Verificar que el producto no se haya editado
+    Producto productoNoExistente = arbolSku.buscar("999");
+    assertNull(productoNoExistente, "Se encontró un producto que no debería existir.");
+}
 }
