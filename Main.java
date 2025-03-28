@@ -36,8 +36,18 @@ public class Main {
 
             switch (opcion) {
                 case 1: /* Listar productos */
-                System.out.println("Lista de productos:");
-                arbolSku.listar(); // Listar productos
+                System.out.println("¿Desea listar por SKU o Nombre? (Ingrese el número de la opción) \n 1. SKU\n 2. Nombre\n");
+                int tipoListado = scanner.nextInt();
+                scanner.nextLine();
+                if (tipoListado == 1) {
+                    System.out.println("Listado de productos por SKU:");
+                    arbolSku.listar(true);
+                } else if (tipoListado == 2){
+                    System.out.println("Listado de productos por Nombre:");
+                    arbolNombre.listar(false);
+                } else {
+                    System.out.println("Opción inválida. Regresando al menú.");
+                }
                 break;
             case 2: /* Buscar producto por SKU */
                 System.out.print("Ingrese el SKU del producto: ");
@@ -93,7 +103,15 @@ public class Main {
             }
                 break;
             case 5: /* Agregar producto */
-                String nuevoSku= Inventario.obtenerSiguienteSku("inventario_ropa_deportiva_30.csv");
+                String ultimoSku = Inventario.obtenerUltimoSku("inventario_ropa_deportiva_30.csv");
+                System.out.println("El último SKU registrado es: " + ultimoSku);
+                System.out.println("Ingrese el SKU del nuevo producto (siga el formato de " + ultimoSku+ ", considerando que el que usted ingrese debe ser mayor que: "+ ultimoSku +".)");
+                String skuNuevo = scanner.nextLine();
+                if (Integer.parseInt(skuNuevo) <= Integer.parseInt(ultimoSku)) {
+                    System.out.println("El SKU ingresado debe ser mayor que el SKU: " + ultimoSku + ".");
+                    return;
+                }
+
                 System.out.println("Ingrese el nombre del nuevo producto: ");
                 String nuevoNombre = scanner.nextLine();
                 if (arbolNombre.buscar(nuevoNombre) != null){
@@ -116,7 +134,8 @@ public class Main {
                         }
                     }
                 }
-                arbolSku.agregarProducto(arbolSku, arbolNombre, nuevoSku, nuevoNombre, nuevaDescripcion, tallas, "inventario_ropa_deportiva_30.csv");
+                arbolSku.agregarProducto(arbolSku, arbolNombre, skuNuevo, nuevoNombre, nuevaDescripcion, tallas, "inventario_ropa_deportiva_30.csv");
+                System.out.println("Producto "+ skuNuevo + ": " + nuevoNombre + " agregado exitosamente.");
                 break;
             case 6: /* Salir */
                 System.out.println("Saliendo del programa.");
