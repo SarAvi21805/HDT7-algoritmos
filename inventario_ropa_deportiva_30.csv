@@ -1,0 +1,31 @@
+SKU,Nombre,Descripción,Tallas
+001,Camiseta Running,Camiseta ligera y transpirable para correr,s:10|xl:10|xs:5|l:15|m:20|xxl:25
+002,Short Deportivo,Short de tela elástica con ajuste cómodo,s:10|l:30|m:25
+003,Leggings Compresión,Leggings ajustados para soporte muscular,s:12|xl:10|xs:8|l:20|m:18
+004,Chamarra Cortaviento,Chamarra ligera para protección contra el viento,s:12|xl:15|l:22|m:18
+005,Pantalón Deportivo,Pantalón cómodo para entrenamiento,s:14|xl:12|xs:6|l:18|m:20
+006,Sudadera con Capucha,Sudadera cálida para entrenamiento en clima frío,s:10|xl:18|l:25|m:20
+007,Top Deportivo,Top de soporte para actividades de alto impacto,s:15|xs:10|l:12|m:18
+008,Mallas de Entrenamiento,Mallas flexibles con tecnología de secado rápido,s:18|xs:12|l:16|m:24
+009,Calcetas Deportivas,Calcetas acolchonadas para mayor comodidad,s:20|l:40|m:30
+010,Guantes de Gimnasio,Guantes para proteger las manos al entrenar,s:8|l:15|m:12
+011,Tank Top,Camiseta sin mangas para mayor ventilación,s:20|xl:10|xs:10|l:15|m:25
+012,Polo Deportivo,Polo ligero y transpirable,s:10|xl:10|l:20|m:15
+013,Chaleco Reflectante,Chaleco de seguridad para entrenamientos nocturnos,s:5|l:12|m:8
+014,Jersey de Ciclismo,Jersey con tecnología de absorción de sudor,s:14|xl:12|xs:8|l:18|m:20
+015,Falda Deportiva,Falda con short interior para comodidad,s:12|xs:10|l:15|m:18
+016,Bermuda de Entrenamiento,Bermuda holgada para entrenamientos intensos,s:12|l:22|m:18
+017,Pantalón de Yoga,Pantalón elástico para sesiones de yoga,s:10|xl:12|xs:6|l:18|m:14
+018,Chamarra Térmica,Chamarra con forro térmico para entrenamientos en invierno,s:10|xl:12|l:18|m:20
+019,Conjunto Deportivo,Conjunto de camiseta y pantalón deportivo,s:8|xl:10|l:20|m:16
+020,Calcetas de Compresión,Calcetas diseñadas para mejorar la circulación,s:15|l:30|m:25
+021,Short de Ciclismo,Short acolchonado para comodidad en ciclismo,s:12|xs:8|l:22|m:18
+022,Pants de Entrenamiento,Pants suaves y cómodos para gimnasio,s:10|xl:12|xs:6|l:18|m:14
+023,Camiseta Técnica,Camiseta de tecnología anti sudor,s:15|xs:10|l:18|m:20
+024,Jersey de Fútbol,Jersey oficial para jugadores y aficionados,s:12|l:25|m:18
+025,Short de Running,Short con ajuste ergonómico,s:15|xs:10|l:18|m:20
+026,Buzo Deportivo,Buzo ajustado para deportes de contacto,s:10|xl:15|l:22|m:18
+027,Playera sin Mangas,Playera fresca para entrenamiento,s:20|xs:12|m:25
+028,Chamarra Impermeable,Chamarra para protección contra lluvia,s:8|xl:12|l:18|m:14
+029,Short Térmico,Short para mantener el calor en invierno,s:12|xs:6|l:22|m:18
+030,Conjunto de Atletismo,Conjunto especial para carreras,s:15|xl:12|xs:10|l:18|m:20

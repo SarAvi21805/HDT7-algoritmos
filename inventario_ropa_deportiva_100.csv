@@ -1,0 +1,101 @@
+SKU,Nombre,Descripción,Cantidad por talla
+001,Short de Pádel,Ajuste cómodo con costuras reforzadas.,l:12|xs:8|s:5|xl:24
+002,Conjunto de Gimnasia,Diseño ergonómico y transpirable para mayor comodidad.,xl:25|m:15|xs:18|s:12
+003,Guantes de Gimnasio,Ideal para entrenamientos de alta intensidad.,m:18|xs:19|s:30|l:20|xl:5
+004,Camiseta de Pádel,Diseño ergonómico y transpirable para mayor comodidad.,s:7|xs:18
+005,Conjunto de Ciclismo,Ligera y fresca para cualquier tipo de entrenamiento.,l:14|s:28|xl:9
+006,Top Deportivo,Elaborada con tela elástica para mayor libertad de movimiento.,m:20|s:11|l:7
+007,Buzo con Capucha,Ideal para entrenamientos de alta intensidad.,xl:6|xs:23|l:10|s:10|m:10
+008,Short de Triatlón,Ligera y fresca para cualquier tipo de entrenamiento.,xs:9|l:10|xl:18|m:19
+009,Pantalón de Triatlón,Material flexible y resistente para mayor movilidad.,l:23|s:5
+010,Pantalón de Gimnasia,Con tecnología de secado rápido y absorción de sudor.,xs:11
+011,Camiseta Running,Ajuste cómodo con costuras reforzadas.,m:30|xl:22|xs:21|s:17|l:22
+012,Gorra Deportiva,Con tecnología de secado rápido y absorción de sudor.,s:9|m:24|xs:18|l:29|xl:21
+013,Mallas Térmicas,Material flexible y resistente para mayor movilidad.,xl:25|xs:18|s:21
+014,Top Deportivo,Ajuste cómodo con costuras reforzadas.,xs:15|s:15|l:8|m:5|xl:20
+015,Short Deportivo,Elaborada con tela elástica para mayor libertad de movimiento.,l:17|m:28|xs:29|xl:9|s:27
+016,Camiseta Térmica,Ropa deportiva de alta calidad para un mejor rendimiento.,s:14|l:24|m:29|xl:27
+017,Top Deportivo,Diseño ergonómico y transpirable para mayor comodidad.,xs:27|xl:17|s:17|m:12
+018,Short de Atletismo,Diseño ergonómico y transpirable para mayor comodidad.,m:24|l:14
+019,Falda de Tenis,Ajuste cómodo con costuras reforzadas.,m:19|l:22|xl:28|xs:13
+020,Mallas de Balonmano,Material flexible y resistente para mayor movilidad.,s:13|m:12|xs:5
+021,Mallas de Yoga,Ropa deportiva de alta calidad para un mejor rendimiento.,xl:5|s:16|xs:27|m:30
+022,Sudadera con Capucha,Elaborada con tela elástica para mayor libertad de movimiento.,xs:13|m:28
+023,Calcetas de Compresión,Material flexible y resistente para mayor movilidad.,m:22|xs:22|l:8|xl:7
+024,Pants de Entrenamiento,Ligera y fresca para cualquier tipo de entrenamiento.,s:7|xl:7|xs:15|m:30|l:27
+025,Pantalón Impermeable,Ropa deportiva de alta calidad para un mejor rendimiento.,xs:25|m:6|s:21|l:10|xl:15
+026,Chaleco de Surf,Material flexible y resistente para mayor movilidad.,l:5|m:22|xl:14|s:23
+027,Pantalón de Trail,Ropa deportiva de alta calidad para un mejor rendimiento.,m:12|l:8
+028,Mallas Térmicas,Ideal para entrenamientos de alta intensidad.,xl:5
+029,Bermuda de Baloncesto,Ajuste cómodo con costuras reforzadas.,xs:5|s:19
+030,Short de Atletismo,Material flexible y resistente para mayor movilidad.,m:10|xs:20|xl:15|l:30
+031,Pantalón de Triatlón,Ligera y fresca para cualquier tipo de entrenamiento.,m:5|s:27|xs:5|l:25|xl:27
+032,Conjunto de Gimnasia,Con protección UV y resistencia a la humedad.,m:12
+033,Top Deportivo,Ligera y fresca para cualquier tipo de entrenamiento.,xl:17|s:9|l:21
+034,Camiseta Técnica,Con tecnología de secado rápido y absorción de sudor.,s:25|xs:23|m:12
+035,Camiseta de Esquí,Con tecnología de secado rápido y absorción de sudor.,s:19|xs:27|xl:29|l:15|m:18
+036,Buzo de Hockey,Ajuste cómodo con costuras reforzadas.,xs:5|l:5|s:9|m:27
+037,Camiseta Running,Ideal para entrenamientos de alta intensidad.,xs:12|l:25|xl:29|m:27|s:9
+038,Buzo de Hockey,Con protección UV y resistencia a la humedad.,xl:15|s:14|l:17|xs:9|m:18
+039,Chamarra Impermeable,Diseño ergonómico y transpirable para mayor comodidad.,s:5|xs:11|l:21
+040,Camiseta de Rugby,Con tecnología de secado rápido y absorción de sudor.,xl:16|m:25
+041,Jersey de Fútbol,Ajuste cómodo con costuras reforzadas.,xs:28|s:13|l:20|xl:8|m:8
+042,Mallas de Yoga,Ideal para entrenamientos de alta intensidad.,xs:11|xl:6|l:9|m:27
+043,Jersey de Fútbol,Elaborada con tela elástica para mayor libertad de movimiento.,m:26|l:24|s:16|xl:29
+044,Short de Triatlón,Material flexible y resistente para mayor movilidad.,xs:5|xl:16|l:20|s:25|m:28
+045,Short de Boxeo,Diseño ergonómico y transpirable para mayor comodidad.,xl:15|l:11
+046,Camiseta Running,Ideal para entrenamientos de alta intensidad.,l:5|s:30|xl:28
+047,Camiseta de Surf,Ropa deportiva de alta calidad para un mejor rendimiento.,s:28|xl:23|l:29|m:15|xs:18
+048,Buzo de Atletismo,Ligera y fresca para cualquier tipo de entrenamiento.,m:27|s:15|l:27|xs:30|xl:28
+049,Buzo de Compresión,Ideal para entrenamientos de alta intensidad.,xs:8|l:6|s:17|xl:22|m:14
+050,Sudadera Técnica,Ropa deportiva de alta calidad para un mejor rendimiento.,xs:16|xl:22
+051,Jersey de Esquí,Material flexible y resistente para mayor movilidad.,m:25
+052,Pantalón de Surf,Ropa deportiva de alta calidad para un mejor rendimiento.,s:26
+053,Pantalón de Gimnasia,Diseño ergonómico y transpirable para mayor comodidad.,s:5
+054,Bermuda de Baloncesto,Ropa deportiva de alta calidad para un mejor rendimiento.,s:30|xs:24|m:5|l:26
+055,Bermuda de Baloncesto,Con protección UV y resistencia a la humedad.,xl:7|s:16|m:22
+056,Leggings Compresión,Diseño ergonómico y transpirable para mayor comodidad.,xs:20|m:27
+057,Pantalón de Triatlón,Con protección UV y resistencia a la humedad.,s:11|l:18|xl:18|xs:15|m:23
+058,Pantalón de Baloncesto,Ideal para entrenamientos de alta intensidad.,xl:10|s:18|l:8
+059,Short de Surf,Ajuste cómodo con costuras reforzadas.,m:5|s:28|xs:16
+060,Short de Ciclismo,Ligera y fresca para cualquier tipo de entrenamiento.,xl:5|m:22|xs:13
+061,Pantalón Impermeable,Ajuste cómodo con costuras reforzadas.,m:13
+062,Mallas de Yoga,Diseño ergonómico y transpirable para mayor comodidad.,l:12|xl:15|xs:17|m:29|s:27
+063,Buzo de Pádel,Con tecnología de secado rápido y absorción de sudor.,m:14|xs:11|s:22|xl:27
+064,Camiseta de Hockey,Ajuste cómodo con costuras reforzadas.,l:5|m:15
+065,Jersey de Ciclismo,Ideal para entrenamientos de alta intensidad.,m:14|xl:6
+066,Buzo Deportivo,Con protección UV y resistencia a la humedad.,m:30|xl:9
+067,Short de Atletismo,Ajuste cómodo con costuras reforzadas.,xs:29|s:8|m:14
+068,Gorra Deportiva,Material flexible y resistente para mayor movilidad.,xl:20
+069,Mallas para Esquí,Ligera y fresca para cualquier tipo de entrenamiento.,xs:7|l:17|s:27|xl:6|m:17
+070,Camiseta de Baloncesto,Ajuste cómodo con costuras reforzadas.,xl:9|s:27|xs:7|m:24|l:19
+071,Bermuda de Entrenamiento,Elaborada con tela elástica para mayor libertad de movimiento.,m:12|xs:12|l:29
+072,Camiseta de Surf,Diseño ergonómico y transpirable para mayor comodidad.,xs:13|m:15|l:5|xl:11
+073,Guantes de Gimnasio,Elaborada con tela elástica para mayor libertad de movimiento.,xs:26
+074,Chamarra Cortaviento,Elaborada con tela elástica para mayor libertad de movimiento.,s:6|l:26|m:30
+075,Buzo de Hockey,Con protección UV y resistencia a la humedad.,xs:7|s:16|xl:28
+076,Conjunto de Ciclismo,Ligera y fresca para cualquier tipo de entrenamiento.,m:24|xl:23
+077,Pantalón de Snowboard,Elaborada con tela elástica para mayor libertad de movimiento.,m:26|l:5|xl:7|s:8|xs:10
+078,Conjunto de Ciclismo,Elaborada con tela elástica para mayor libertad de movimiento.,s:10|xs:12
+079,Mallas para Esquí,Elaborada con tela elástica para mayor libertad de movimiento.,m:27|l:11|xl:14|xs:9
+080,Chamarra Softshell,Material flexible y resistente para mayor movilidad.,xl:5|l:27|m:15|xs:22|s:13
+081,Jersey de Ciclismo,Ideal para entrenamientos de alta intensidad.,m:22|xs:5
+082,Buzo de Hockey,Material flexible y resistente para mayor movilidad.,xl:15|l:24|xs:28
+083,Calcetas de Compresión,Elaborada con tela elástica para mayor libertad de movimiento.,m:13
+084,Sudadera con Capucha,Elaborada con tela elástica para mayor libertad de movimiento.,xl:22|m:22
+085,Chamarra de Snowboard,Ideal para entrenamientos de alta intensidad.,xs:28|l:27|s:12|xl:15
+086,Buzo con Capucha,Ropa deportiva de alta calidad para un mejor rendimiento.,l:27|xs:13|s:5|m:16|xl:16
+087,Pantalón de Yoga,Con tecnología de secado rápido y absorción de sudor.,xs:20|m:12
+088,Camiseta de Esquí,Ideal para entrenamientos de alta intensidad.,l:25|s:6|xl:21|m:7
+089,Chaleco Aislante,Elaborada con tela elástica para mayor libertad de movimiento.,m:24|l:7
+090,Camiseta Térmica,Ideal para entrenamientos de alta intensidad.,xl:24
+091,Mallas para Esquí,Perfecta para entrenamientos en interiores y exteriores.,xl:11
+092,Short de Atletismo,Ropa deportiva de alta calidad para un mejor rendimiento.,xs:26
+093,Chamarra de Snowboard,Elaborada con tela elástica para mayor libertad de movimiento.,l:26
+094,Falda de Tenis,Ideal para entrenamientos de alta intensidad.,xs:9|s:8|m:28
+095,Pants de Entrenamiento,Ropa deportiva de alta calidad para un mejor rendimiento.,s:22|xl:23|m:30
+096,Falda de Running,Ideal para entrenamientos de alta intensidad.,l:13|xl:26|m:30
+097,Buzo de Compresión,Ideal para entrenamientos de alta intensidad.,l:8|s:29
+098,Camiseta de Baloncesto,Elaborada con tela elástica para mayor libertad de movimiento.,xl:20|xs:13|l:9|m:12
+099,Pantalón de Triatlón,Perfecta para entrenamientos en interiores y exteriores.,xl:26|s:26
+100,Short de Tenis,Ideal para entrenamientos de alta intensidad.,l:7|s:24
