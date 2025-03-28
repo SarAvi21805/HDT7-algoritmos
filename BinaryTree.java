@@ -58,24 +58,40 @@ public class BinaryTree {
     }
 
     /**
-     * Lista todos los productos en el árbol en orden.
+     * Lista todos los productos en el árbol en orden, según el tipo de clave.
+     * @param porSku true para listar por SKU, false para listar por nombre
      */
-    public void listar() {
-        listarRecursivo(raiz);
-    }
-
-    /**
-     * Método recursivo para listar los productos del árbol
-     * @param nodo El nodo actual que se está listando
-     */
-    private void listarRecursivo(Nodo nodo) {
-        if (nodo != null) {
-            listarRecursivo(nodo.izquierdo);
-            System.out.println("SKU: " + nodo.valor.getSku() + "\nNombre: " + nodo.valor.getNombre());
-            listarRecursivo(nodo.derecho);
+    public void listar(boolean porSku) {
+        if (porSku) {
+            listarPorSkuRecursivo(raiz);
+        } else {
+            listarPorNombreRecursivo(raiz);
         }
     }
 
+    /**
+     * Método recursivo para listar los productos del árbol por SKU
+     * @param nodo El nodo actual que se está listando
+     */
+    private void listarPorSkuRecursivo(Nodo nodo) {
+        if (nodo != null) {
+            listarPorSkuRecursivo(nodo.izquierdo);
+            System.out.println("SKU: " + nodo.valor.getSku() + "\nNombre: " + nodo.valor.getNombre());
+            listarPorSkuRecursivo(nodo.derecho);
+        }
+    }
+
+    /**
+     * Método recursivo para listar los productos del árbol por nombre
+     * @param nodo El nodo actual que se está listando
+     */
+    private void listarPorNombreRecursivo(Nodo nodo) {
+        if (nodo != null) {
+            listarPorNombreRecursivo(nodo.izquierdo);
+            System.out.println("Nombre: " + nodo.valor.getNombre() + "\nSKU: " + nodo.valor.getSku());
+            listarPorNombreRecursivo(nodo.derecho);
+        }
+    }
     /**
      * Agrega un nuevo producto al árbol y guarda el inventario en el archivo
      * @param arbolSku El árbol binario que almacena productos por SKU
