@@ -81,25 +81,13 @@ public class Main {
                                 String tallaNombre = tallaPartes[0].trim();
                                 int cantidad = Integer.parseInt(tallaPartes[1].trim());
                                 cantidades.put(tallaNombre, cantidad);
-                    }
-                    
-                    /*String nuevasTallasStr = scanner.nextLine();
-                    Map<String, Integer> nuevasTallas = new HashMap<>();
-                    if (!nuevasTallasStr.isEmpty()) {
-                        String[] tallasArray = nuevasTallasStr.split(",");
-                        for (String talla : tallasArray) {
-                            String[] tallaPartes = talla.split(":");
-                            nuevasTallas.put(tallaPartes[0], Integer.parseInt(tallaPartes[1]));
-                        }*/
-                    }
+                            }
+                        }
                     
                     /* Actualización del producto */
                     inventario.editarProducto(arbolSku, skuEditar, nuevaDescripcion, operacion, cantidades, "inventario_ropa_deportiva_30.csv");
                     System.out.println("Producto actualizado.");
-                    /*productoEditar.actualizarTallas(nuevasTallas);
-                    if (!nuevaDescripcion.isEmpty()) {
-                        productoEditar.setDescripcion(nuevaDescripcion);*/
-                    }/* Inventario.guardarInventario();*/ else {
+                    } else {
                     System.out.println("Producto no encontrado.");
                 }
             }
